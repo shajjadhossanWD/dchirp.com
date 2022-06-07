@@ -1,0 +1,16 @@
+.walletPage{
+    background-color: black;
+}
+.walletdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.walletloginbtn{
+    background-color: rgb(27, 4, 107);
+    padding: 8px;
+    border: none;
+    border-radius: 9px;
+    color: white;
+}
