@@ -1,7 +1,29 @@
 .feed{
-    flex:5.5
+    flex:3
 }
 
 .feedWrapper{
     padding: 20px;
 }
+.addBtnCommon{
+    display: none;
+}
+@media only screen and (max-width: 800px) {
+    .feedWrapper{
+        margin-top: 30px;
+    }
+
+    .addBtnCommon{
+        background-color: rgba(10, 34, 130, 0.438);
+        border-radius: 50%;
+        border: none;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 7rem;
+        display: block;
+        position: fixed;
+      }
+  }

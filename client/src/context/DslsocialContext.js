@@ -77,7 +77,7 @@ export default function DslProvider({ children }) {
   const logOut = async () => {
     setCurrentAccount(null);
     setUser({});
-    await axios.post("/wallet/users/logout", {}, {
+    await axios.post("https://backend.grighund.net/api/users/logout", {}, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`
       }
@@ -164,7 +164,7 @@ export default function DslProvider({ children }) {
           const accounts = await ethereum.request({ method: "eth_requestAccounts", });
           setCurrentAccount(accounts[0]);
 
-          await axios.post(`/wallet/users/`, {
+          await axios.post(`https://backend.grighund.net/api/users/`, {
             walletAddress: accounts[0],
           })
             .then((res) => {
@@ -231,7 +231,7 @@ export default function DslProvider({ children }) {
   useEffect(() => {
     if (currentAccount && localStorage.getItem("token")) {
       setLoading(true);
-      axios.get(`/wallet/users/${currentAccount}`, {
+      axios.get(`https://backend.grighund.net/api/users/${currentAccount}`, {
         headers: {
           "authorization": `Bearer ${localStorage.getItem("token")}`
         }

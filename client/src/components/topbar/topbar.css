@@ -1,7 +1,7 @@
 .topbarContainer {
   height: 50px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.556);
+  background-color: rgba(0, 0, 0, 0.938);
   display: flex;
   align-items: center;
   position: sticky;
@@ -88,9 +88,15 @@
 }
 
 .topbarImg {
-  width: 42px;
-  height: 42px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   object-fit: cover;
   cursor: pointer;
 }
+@media only screen and (max-width: 800px) {
+  .topbarContainer{
+    display: none;
+
+  }
+} 

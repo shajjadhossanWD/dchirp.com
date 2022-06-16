@@ -8,14 +8,14 @@ import Slide from '@mui/material/Slide';
 import './WalletPopUp.css';
 import { Card, Col, Row } from 'react-bootstrap';
 import walletImg from './1.png';
-import DslsocialContext from "../../context/DslsocialContext";
+import { DslsocialContext } from '../../context/DslsocialContext';
 
 const Transition = forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
 export default function WalletPopUp({ open, handleClose }) {
-  // const { connectWallet } = useContext(DslsocialContext);
+   const { connectWallet } = useContext(DslsocialContext);
 
 
   return (
@@ -44,8 +44,7 @@ export default function WalletPopUp({ open, handleClose }) {
               </div>
               <Row xs={1} md={1} className="g-2">
                 <Col>
-                  <Card className='walletDiv' > 
-                  {/* onClick={() => connectWallet('Metamask')} */}
+                  <Card className='walletDiv' onClick={() => connectWallet('Metamask')} > 
                     <Card.Img variant="top" src={walletImg} className="imgWallet" />
                     <Card.Body>
                       <Card.Title className='walletName'>Metamask</Card.Title>

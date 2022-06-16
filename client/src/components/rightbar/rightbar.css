@@ -1,5 +1,5 @@
 .rightbar {
-  flex: 3.5;
+  flex: 3;
 }
 
 .rightbarWrapper {
@@ -99,4 +99,10 @@
 
 .rightbarFollowButton:focus{
   outline: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .rightbar {
+    display: none;
+  }
 }

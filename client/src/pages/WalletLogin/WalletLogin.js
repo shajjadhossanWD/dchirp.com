@@ -14,9 +14,9 @@ const WalletLogin = () => {
     };
 
     return (
-        <div className='walletPage'>
-            <div className="walletdiv">
-                <h4>DSLSOCIAL</h4>
+        <div className='walletPages'>
+            <div className="walletdivs">
+                <h4 className='text-white'>DCHIRP.COM</h4>
                 <p><button className='walletloginbtn' onClick={handleClickOpen}>Login with wallet</button></p>
             </div>
             <WalletPopup

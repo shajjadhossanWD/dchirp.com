@@ -1,11 +1,13 @@
-.walletPage{
+.walletPages{
     background-color: black;
+
 }
-.walletdiv{
+.walletdivs{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    height: 100vh;
 }
 .walletloginbtn{
     background-color: rgb(27, 4, 107);
@@ -14,3 +16,40 @@
     border-radius: 9px;
     color: white;
 }
+.swal-title{
+    color: rgb(218, 60, 60);
+  }
+  .swal-text{
+    color: white;
+  }
+  .swal-content {
+    padding: 0 20px;
+    margin-top: 9px;
+    font-size: 15px;
+    overflow-wrap: break-word;
+    color: white;
+  }
+  .link_hash {
+    color: white;
+  }
+  .modal_class{
+    background-color: #0c2347;
+  }
+  .swal-modal{
+    background-color: #0c2347;
+  }
+  .modal_class_success .swal-icon::before {
+    background-color: transparent;
+  }
+  
+  .modal_class_success .swal-icon::after {
+    background-color: transparent;
+  }
+  .swal-icon--success__hide-corners {
+    background-color: transparent;
+  }
+  .success {
+    color: #FF343F;
+    margin-top: 1rem;
+    padding-bottom: 1.5rem;
+  }

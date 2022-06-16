@@ -1,0 +1,33 @@
+.alertWalletDivpost {
+    margin-top: -2.5rem;
+}
+
+.closeBtnpost {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.dialogWalletpost {
+    background-color:#10284c;
+    color: white;
+}
+
+.sharepost {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .shareWrapperpost {
+    padding: 0px;
+  }
+
+.shareHrpost{
+    margin: 20px;
+    color: wheat;
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+}
